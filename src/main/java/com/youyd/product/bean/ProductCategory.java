@@ -1,4 +1,4 @@
-package com.youyd.bean;
+package com.youyd.product.bean;
 
 import java.util.Date;
 

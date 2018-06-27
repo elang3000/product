@@ -1,4 +1,4 @@
-package com.youyd.enums;
+package com.youyd.product.enums;
 
 /**
  * 商品上下架状态

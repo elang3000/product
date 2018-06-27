@@ -1,4 +1,4 @@
-package com.youyd.vo;
+package com.youyd.product.vo;
 
 /**
  * http返回的外层对象

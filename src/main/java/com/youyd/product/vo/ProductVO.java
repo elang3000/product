@@ -1,4 +1,4 @@
-package com.youyd.vo;
+package com.youyd.product.vo;
 
 import java.util.List;
 

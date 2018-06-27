@@ -1,8 +1,8 @@
-package com.youyd.service;
+package com.youyd.product.service;
 
 import java.util.List;
 
-import com.youyd.bean.ProductInfo;
+import com.youyd.product.bean.ProductInfo;
 
 public interface ProductService {
 	/**

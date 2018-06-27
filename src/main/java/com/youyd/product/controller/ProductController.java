@@ -1,4 +1,4 @@
-package com.youyd.controller;
+package com.youyd.product.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,13 +9,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.youyd.bean.ProductCategory;
-import com.youyd.bean.ProductInfo;
-import com.youyd.service.CategoryService;
-import com.youyd.service.ProductService;
-import com.youyd.vo.ProductInfoVO;
-import com.youyd.vo.ProductVO;
-import com.youyd.vo.ResultVO;
+import com.youyd.product.bean.ProductCategory;
+import com.youyd.product.bean.ProductInfo;
+import com.youyd.product.service.CategoryService;
+import com.youyd.product.service.ProductService;
+import com.youyd.product.utils.ResultVOUtil;
+import com.youyd.product.vo.ProductInfoVO;
+import com.youyd.product.vo.ProductVO;
+import com.youyd.product.vo.ResultVO;
 
 @RestController
 @RequestMapping("/product")
@@ -59,10 +60,6 @@ public class ProductController {
 			productVOList.add(productVO);
 		}
 		
-		ResultVO resultVO=new ResultVO<>();
-		resultVO.setData(productVOList);
-		resultVO.setCode(0);
-		resultVO.setMsg("成功");
-		return resultVO;
+		return ResultVOUtil.success(productVOList);
 	}
 }
