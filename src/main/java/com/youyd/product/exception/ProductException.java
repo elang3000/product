@@ -1,6 +1,6 @@
-package exception;
+package com.youyd.product.exception;
 
-import enums.ResultEnum;
+import com.youyd.product.enums.ResultEnum;
 
 public class ProductException extends RuntimeException{
 	private Integer code;

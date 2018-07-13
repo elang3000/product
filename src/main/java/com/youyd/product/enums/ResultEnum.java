@@ -1,4 +1,4 @@
-package enums;
+package com.youyd.product.enums;
 
 public enum ResultEnum {
 	PRODUCT_NOT_EXIST(1,"商品不存在"),
